@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/lerte/Documents/workspace/Avcall-android/Avcall/build/intermediates/res/merged/debug/menu/em_context_tab_contact.xml",
+        "source": "/Users/lerte/Documents/workspace/Avcall-android/Avcall/res/menu/em_context_tab_contact.xml"
+    },
+    {
+        "merged": "/Users/lerte/Documents/workspace/Avcall-android/Avcall/build/intermediates/res/merged/debug/menu/em_delete_message.xml",
+        "source": "/Users/lerte/Documents/workspace/Avcall-android/Avcall/res/menu/em_delete_message.xml"
+    },
+    {
+        "merged": "/Users/lerte/Documents/workspace/Avcall-android/Avcall/build/intermediates/res/merged/debug/menu/em_context_contact_list.xml",
+        "source": "/Users/lerte/Documents/workspace/Avcall-android/Avcall/res/menu/em_context_contact_list.xml"
+    },
+    {
+        "merged": "/Users/lerte/Documents/workspace/Avcall-android/Avcall/build/intermediates/res/merged/debug/menu/em_delete_contact.xml",
+        "source": "/Users/lerte/Documents/workspace/Avcall-android/Avcall/res/menu/em_delete_contact.xml"
+    },
+    {
+        "merged": "/Users/lerte/Documents/workspace/Avcall-android/Avcall/build/intermediates/res/merged/debug/menu/em_remove_from_blacklist.xml",
+        "source": "/Users/lerte/Documents/workspace/Avcall-android/Avcall/res/menu/em_remove_from_blacklist.xml"
+    }
+]

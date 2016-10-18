@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/em_chat_error_item_bg"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip">
+        <ImageView
+            android:id="@id/iv_neterror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9.0dip"
+            android:src="@drawable/em_login_error_icon" />
+        <TextView
+            android:textColor="#ff000000"
+            android:id="@id/tv_connect_errormsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:text="@string/unable_to_connect" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <com.avcall.app.widget.ContactItemView
+        android:id="@id/application_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:contactItemImage="@drawable/em_new_friends_icon"
+        app:contactItemName="@string/Application_and_notify" />
+    <com.avcall.app.widget.ContactItemView
+        android:id="@id/group_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:contactItemImage="@drawable/em_groups_icon"
+        app:contactItemName="@string/group_chat" />
+    <com.avcall.app.widget.ContactItemView
+        android:id="@id/chat_room_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:contactItemImage="@drawable/em_groups_icon"
+        app:contactItemName="@string/chat_room" />
+</LinearLayout>

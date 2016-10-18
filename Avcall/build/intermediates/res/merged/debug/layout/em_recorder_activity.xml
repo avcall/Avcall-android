@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:id="@id/title"
+        android:background="@color/top_bar_normal_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_top_bar">
+        <include layout="@layout/ease_commom_back_btn" />
+        <TextView
+            android:textSize="18.0sp"
+            android:textColor="#ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recording_video"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <VideoView
+            android:id="@id/mVideoView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <Button
+            android:id="@id/switch_btn"
+            android:background="@drawable/em_camera_switch_selector"
+            android:visibility="invisible"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" />
+        <Chronometer
+            android:textColor="#ffffffff"
+            android:gravity="center_horizontal"
+            android:id="@id/chronometer"
+            android:background="@color/btn_gray_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+        <ImageView
+            android:gravity="center"
+            android:id="@id/recorder_start"
+            android:visibility="visible"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:src="@drawable/em_video_recorder_start_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:gravity="center"
+            android:id="@id/recorder_stop"
+            android:visibility="invisible"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:src="@drawable/em_video_recorder_stop_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

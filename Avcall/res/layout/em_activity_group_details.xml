@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:background="@color/top_bar_normal_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_top_bar">
+        <LinearLayout
+            android:background="@drawable/ease_common_tab_bg"
+            android:layout_width="45.0dip"
+            android:layout_height="fill_parent"
+            android:onClick="back">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.0dip"
+                android:src="@drawable/em_mm_title_back"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+        <TextView
+            android:textSize="20.0sp"
+            android:textColor="#ffffffff"
+            android:id="@id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+        <ProgressBar
+            android:id="@id/progressBar"
+            android:layout_width="26.0dip"
+            android:layout_height="26.0dip"
+            android:layout_marginRight="7.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView
+        android:background="#fff2f0eb"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.hyphenate.easeui.widget.EaseExpandGridView
+                android:gravity="start"
+                android:id="@id/gridview"
+                android:background="@drawable/em_app_pref_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="13.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:listSelector="@android:color/transparent"
+                android:horizontalSpacing="6.0dip"
+                android:verticalSpacing="10.0dip"
+                android:numColumns="4" />
+            <TextView
+                android:background="#ffe6e6e6"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip" />
+            <RelativeLayout
+                android:id="@id/rl_group_id"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:typeface="serif"
+                    android:textColor="@android:color/black"
+                    android:id="@id/tv_group_id"
+                    android:paddingLeft="20.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/group_id"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:id="@id/tv_group_id_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:background="#ffe6e6e6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@id/rl_group_nick"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:typeface="serif"
+                    android:textColor="@android:color/black"
+                    android:id="@id/tv_group_nick"
+                    android:paddingLeft="20.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/group_nick"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:textSize="18.0sp"
+                    android:id="@id/tv_group_nick_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@id/tv_group_nick"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:background="#ffe6e6e6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@id/rl_group_owner"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:typeface="serif"
+                    android:textColor="@android:color/black"
+                    android:id="@id/tv_group_owner"
+                    android:paddingLeft="20.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/group_owner"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:textSize="18.0sp"
+                    android:id="@id/tv_group_owner_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@id/tv_group_owner"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:background="#ffe6e6e6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@id/clear_all_history"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:typeface="serif"
+                    android:textColor="@android:color/black"
+                    android:gravity="center|left"
+                    android:paddingLeft="20.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Empty_the_chat_record"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:background="#ffe6e6e6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@id/rl_change_group_name"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:typeface="serif"
+                    android:textColor="@android:color/black"
+                    android:gravity="center|left"
+                    android:paddingLeft="20.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Change_the_group_name"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:background="#ffe6e6e6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@id/rl_blacklist"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:typeface="serif"
+                    android:textColor="@android:color/black"
+                    android:gravity="center|left"
+                    android:paddingLeft="20.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blacklist"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:background="#ffe6e6e6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@id/rl_switch_block_groupmsg"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:padding="10.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:typeface="serif"
+                    android:textColor="@android:color/black"
+                    android:paddingLeft="10.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Shielding_of_the_message"
+                    android:layout_centerVertical="true" />
+                <com.hyphenate.easeui.widget.EaseSwitchButton
+                    android:id="@id/switch_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:switchStatus="close" />
+            </RelativeLayout>
+            <TextView
+                android:background="#ffe6e6e6"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip" />
+            <RelativeLayout
+                android:id="@id/rl_search"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:typeface="serif"
+                    android:textColor="@android:color/black"
+                    android:gravity="center|left"
+                    android:paddingLeft="20.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/serach_group_message"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:background="#ffe6e6e6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <Button
+                android:textSize="18.0sp"
+                android:textColor="@android:color/white"
+                android:id="@id/btn_exit_grp"
+                android:background="@drawable/em_btn_style_alert_dialog_special"
+                android:paddingTop="7.0dip"
+                android:paddingBottom="7.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="11.0dip"
+                android:text="@string/Exit_the_group_chat"
+                android:onClick="exitGroup" />
+            <Button
+                android:textSize="18.0sp"
+                android:textColor="@android:color/white"
+                android:id="@id/btn_exitdel_grp"
+                android:background="@drawable/em_btn_style_alert_dialog_special"
+                android:paddingTop="7.0dip"
+                android:paddingBottom="7.0dip"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="11.0dip"
+                android:text="@string/dismiss_group"
+                android:onClick="exitDeleteGroup" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

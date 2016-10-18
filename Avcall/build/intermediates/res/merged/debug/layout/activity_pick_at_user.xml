@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffeeeeee"
+    android:fitsSystemWindows="true"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:background="@color/top_bar_normal_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_top_bar">
+        <LinearLayout
+            android:background="@drawable/ease_common_tab_bg"
+            android:layout_width="45.0dip"
+            android:layout_height="fill_parent"
+            android:onClick="back">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.0dip"
+                android:src="@drawable/em_mm_title_back"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+        <TextView
+            android:textSize="20.0sp"
+            android:textColor="#ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Select_the_contact"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ListView
+            android:id="@id/list"
+            android:background="@android:color/transparent"
+            android:descendantFocusability="afterDescendants"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#ffd4d4d4"
+            android:dividerHeight="1.0px"
+            android:fastScrollEnabled="true" />
+        <com.hyphenate.easeui.widget.EaseSidebar
+            android:id="@id/sidebar"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:layout_width="25.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:textSize="40.0sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:id="@id/floating_header"
+            android:background="@drawable/em_show_head_toast_bg"
+            android:paddingLeft="25.0dip"
+            android:paddingRight="25.0dip"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

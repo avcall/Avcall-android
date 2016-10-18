@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/lerte/Documents/workspace/Avcall-android/Avcall/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="45626cab69665a3578ed4941384f080233298212">
+        <dex dex="/Users/lerte/Documents/workspace/Avcall-android/Avcall/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ede81def3bc54c54b73c6e9943fe5d6059f80a1d/classes.dex" />
+    </item>
+
+</items>

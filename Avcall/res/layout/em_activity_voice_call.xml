@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@id/root_layout"
+    android:background="#ff252c39"
+    android:paddingLeft="20.0dip"
+    android:paddingRight="20.0dip"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_weight="1.0"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:textSize="22.0sp"
+            android:textColor="@color/voip_interface_text_color"
+            android:id="@id/tv_call_state"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.avcall.app.widget.MyChronometer
+            android:textColor="#ffffffff"
+            android:id="@id/chronometer"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chronometer" />
+        <TextView
+            android:textColor="#ffffffff"
+            android:id="@id/tv_is_p2p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textColor="@color/voip_interface_text_color"
+            android:id="@id/tv_calling_duration"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="25.0dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="2.0">
+        <ImageView
+            android:id="@id/swing_card"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:layout_marginTop="10.0dip"
+            android:src="@drawable/em_default_avatar"
+            android:scaleType="fitXY" />
+        <TextView
+            android:textSize="20.0sp"
+            android:textColor="@android:color/white"
+            android:id="@id/tv_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="爱话" />
+        <TextView
+            android:textColor="@android:color/white"
+            android:id="@id/tv_network_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="2.0">
+        <LinearLayout
+            android:id="@id/ll_voice_control"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:id="@id/iv_mute"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/em_icon_mute_normal"
+                    android:scaleType="fitCenter" />
+                <TextView
+                    android:textColor="#ff666167"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.0dip"
+                    android:text="@string/mute" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:id="@id/iv_handsfree"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/em_icon_speaker_normal"
+                    android:scaleType="fitCenter" />
+                <TextView
+                    android:textColor="#ff666167"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.0dip"
+                    android:text="@string/Hands_free" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip">
+            <Button android:textSize="20.0sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:id="@id/btn_hangup_call"
+                android:background="@drawable/em_call_hangup_bg"
+                android:visibility="invisible"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:text="@string/hang_up" />
+            <LinearLayout
+                android:id="@id/ll_coming_call"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:textSize="20.0sp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:id="@id/btn_refuse_call"
+                    android:background="@drawable/em_call_hangup_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60.0dip"
+                    android:text="@string/hang_up"
+                    android:layout_weight="1.0" />
+                <Button
+                    android:textSize="20.0sp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:id="@id/btn_answer_call"
+                    android:background="@drawable/em_call_answer_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60.0dip"
+                    android:layout_marginLeft="30.0dip"
+                    android:text="@string/answer"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

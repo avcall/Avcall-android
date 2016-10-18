@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:id="@id/rl_title_bar"
+        android:background="@color/top_bar_normal_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_top_bar">
+        <include layout="@layout/ease_commom_back_btn" />
+        <TextView
+            android:textSize="18.0sp"
+            android:textColor="@color/bottom_text_color_normal"
+            android:id="@id/tv_contact_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_contacts"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ListView
+            android:id="@id/list"
+            android:background="@android:color/transparent"
+            android:descendantFocusability="afterDescendants"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#ffe2e2e2"
+            android:dividerHeight="1.0dip" />
+        <com.hyphenate.easeui.widget.EaseSidebar
+            android:id="@id/sidebar"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:layout_width="25.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:textSize="40.0sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:id="@id/floating_header"
+            android:background="@drawable/em_show_head_toast_bg"
+            android:paddingLeft="25.0dip"
+            android:paddingRight="25.0dip"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

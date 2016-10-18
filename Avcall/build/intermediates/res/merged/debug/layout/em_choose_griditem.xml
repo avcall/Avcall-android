@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="2.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.avcall.app.widget.RecyclingImageView
+            android:id="@id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <ImageView
+            android:id="@id/video_icon"
+            android:visibility="gone"
+            android:clickable="false"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ease_video_download_btn_nor"
+            android:scaleType="center" />
+    </RelativeLayout>
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:id="@id/video_data_area"
+        android:background="@drawable/ease_chat_video_mask_to"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:textSize="12.0sp"
+            android:textColor="@android:color/white"
+            android:id="@id/chatting_size_iv"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="12.0sp"
+            android:textColor="@android:color/white"
+            android:gravity="right"
+            android:id="@id/chatting_length_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

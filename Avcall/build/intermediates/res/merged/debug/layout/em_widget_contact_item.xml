@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="15.0sp"
+        android:textColor="#ff8a99ac"
+        android:id="@id/header"
+        android:background="#ffe0e0e0"
+        android:paddingLeft="10.0dip"
+        android:paddingTop="2.0dip"
+        android:paddingBottom="2.0dip"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:background="@drawable/ease_mm_listitem"
+        android:duplicateParentState="true"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip">
+        <ImageView
+            android:id="@id/avatar"
+            android:layout_width="43.0dip"
+            android:layout_height="43.0dip"
+            android:layout_marginLeft="11.0dip"
+            android:src="@drawable/ease_default_avatar"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="11.0dip"
+            android:layout_toLeftOf="@id/unread_msg_number"
+            android:layout_toRightOf="@id/avatar">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp"
+                    android:textColor="#ff8c8c8c"
+                    android:ellipsize="end"
+                    android:id="@id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4.0dip"
+                    android:singleLine="true" />
+            </LinearLayout>
+            <TextView
+                android:textSize="13.0sp"
+                android:textColor="#ff888888"
+                android:ellipsize="end"
+                android:id="@id/signature"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:layout_marginRight="4.0dip"
+                android:singleLine="true" />
+        </LinearLayout>
+        <TextView
+            android:textSize="12.0sp"
+            android:gravity="center"
+            android:id="@id/unread_msg_number"
+            android:background="@drawable/ease_unread_dot"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>
